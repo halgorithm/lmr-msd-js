@@ -1,0 +1,59 @@
+import * as ids from './collision_values'
+
+export const SOLIDS = new Set([
+  ids.GROUND,
+  ids.CRUSH_HORIZONTAL,
+  ids.CRUSH_VERTICAL,
+  ids.ICE
+])
+
+export const WATERS = Set([
+  ids.WATER,
+  ids.WATER_LADDER_LEFT,
+  ids.WATER_LADDER_LEFT_CENTER,
+  ids.WATER_LADDER_RIGHT,
+  ids.WATER_LADDER_RIGHT_CENTER,
+  ids.WATER_FLOW_LEFT,
+  ids.WATER_FLOW_RIGHT,
+  ids.WATER_FLOW_DOWN,
+  ids.WATER_FLOW_UP
+])
+
+export const LAVAS = Set([
+  ids.LAVA,
+  ids.LAVA_LADDER_LEFT,
+  ids.LAVA_LADDER_LEFT_CENTER,
+  ids.LAVA_LADDER_RIGHT,
+  ids.LAVA_LADDER_RIGHT_CENTER,
+  ids.LAVA_FLOW_LEFT,
+  ids.LAVA_FLOW_RIGHT,
+  ids.LAVA_FLOW_DOWN,
+  ids.LAVA_FLOW_UP
+])
+
+export const LADDERS = Set([
+  ids.LADDER_LEFT,
+  ids.LADDER_RIGHT,
+  ids.LADDER_LEFT_CENTER,
+  ids.LADDER_RIGHT_CENTER,
+  ids.WATER_LADDER_LEFT,
+  ids.WATER_LADDER_LEFT_CENTER,
+  ids.WATER_LADDER_RIGHT_CENTER,
+  ids.WATER_LADDER_RIGHT,
+  ids.LAVA_LADDER_LEFT,
+  ids.LAVA_LADDER_LEFT_CENTER,
+  ids.LAVA_LADDER_RIGHT_CENTER,
+  ids.LAVA_LADDER_RIGHT
+])
+
+export const ICES = Set([
+  ids.ICE,
+  ids.ICE_SLOPE_45_ASC,
+  ids.ICE_SLOPE_45_DESC,
+  ids.ICE_SLOPE_30_ASC_LOWER,
+  ids.ICE_SLOPE_30_ASC_UPPER,
+  ids.ICE_SLOPE_30_DESC_UPPER,
+  ids.ICE_SLOPE_30_DESC_LOWER
+])
+
+// TODO isCrusher, isEmpty, isKnown
